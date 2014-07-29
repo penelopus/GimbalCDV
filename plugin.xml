@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="org.synerjulz.app.gimbal.cordova" version="0.0.1">
+	<name>Gimbal</name>
+	<description>Gimbal Plugin</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,gimbal</keywords>
+	<js-module src="www/gimbal.js" name="gimbal">
+		<clobbers target="gimbal" />
+	</js-module>
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="Gimbal">
+				<param name="ios-package" value="CDVDevice"/>
+			</feature>
+		</config-file>
+		<header-file src="src/ios/GimbalCDV.h" />
+		<source-file src="src/ios/GimbalCDV.m" />
+	</platform>
+</plugin>
