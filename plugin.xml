@@ -10,7 +10,7 @@
 	<platform name="ios">
 		<config-file target="config.xml" parent="/*">
 			<feature name="Gimbal">
-				<param name="ios-package" value="CDVDevice"/>
+				<param name="ios-package" value="GimbalCDV"/>
 			</feature>
 		</config-file>
 		<header-file src="src/ios/GimbalCDV.h" />
