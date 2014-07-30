@@ -1,7 +1,11 @@
 "use strict";
 
-var PLUGIN_ID = "Gimbal";
+var PLUGIN_ID = "GimbalCDV";
 
-function doGimbal() {
-	cordova.exec(function() {}, function(error) {}, "Gimbal", "gimbalMethod", []);
+var Gimbal = {
+	doGimbal: function() {
+		cordova.exec(function() {}, function(error) {}, "Gimbal", "gimbalMethod", []);
+	}
 }
+
+exports.Gimbal = Gimbal;
