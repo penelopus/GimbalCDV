@@ -1,5 +1,5 @@
 //
-//  GimbalCordova.h
+//  GimbalCDV.h
 //  GimbalApp
 //
 //  Created by Julie Driscoll on 7/29/14.
@@ -8,7 +8,7 @@
 
 #import <Cordova/CDV.h>
 
-@interface GimbalCordova : CDVPlugin
+@interface GimbalCDV : CDVPlugin
 
 - (void) gimbalMethod:(CDVInvokedUrlCommand*)command;
 
