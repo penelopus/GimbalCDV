@@ -7,6 +7,7 @@
 //
 
 #import "GimbalCDV.h"
+#import "AppDelegate.h"
 #import <Cordova/CDV.h>
 
 @implementation GimbalCDV
@@ -22,6 +23,8 @@
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
     }
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    
+    [(AppDelegate *)[[UIApplication sharedApplication] delegate] showSightingsTable];
 }
 
 @end
